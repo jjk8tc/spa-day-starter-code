@@ -10,16 +10,19 @@
         <label>
             Username:
             <input type = 'text' name = 'username' th:value="${user.username}">
+            <span th:errors="${user.username}"></span>
         </label>
 
         <label>
             Email:
             <input name = 'email' th:value="${user.email}">
+            <span th:errors="${user.email}"></span>
         </label>
 
         <label>
             Password:
             <input type = 'password' name = 'password'>
+            <span th:errors="${user.password}"></span>
         </label>
 
         <label>
